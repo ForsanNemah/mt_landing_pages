@@ -80,7 +80,7 @@
 
 
 
-					<img   src="ads/logo.png" class="img-fluid" alt="Responsive image" width="200px" height="200px" >
+					<img   src="ads/logo.png" class="img-fluid" alt="Responsive image" width="150px" height="150px" >
 
 
 						<h2 > 
@@ -126,7 +126,11 @@ include 'info.php';
 </div>
 
 
+<div id="slider0">
+ 
 
+
+</div>
 
 
 						</div>
@@ -494,7 +498,8 @@ var datetime = "" + currentdate.getDate() + "/"
 
 
                 $("#includedContent").load("form_name_phn_type.php"); 
-                $("#slider1").load("slider1.php"); 
+                $("#slider0").load("slider1.php");
+                //$("#slider1").load("slider1.php"); 
                 //$("#slider2").load("slider2.php"); 
                 $("#cta_whatsapp").load("cta/cta_whatsapp.php"); 
                 $("#cta_call").load("cta/cta_call.php"); 
