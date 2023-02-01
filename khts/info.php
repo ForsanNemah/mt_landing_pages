@@ -5,7 +5,7 @@ $items = array();
 
 
 
-$handle = fopen("services/kh_courses.txt", "r");
+$handle = fopen("services/mt_courses.txt", "r");
 if ($handle) {
 $i=0;
     while (($line = fgets($handle)) !== false) {

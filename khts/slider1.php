@@ -45,53 +45,7 @@
 
           <div class="item  ">
         
-        <img src="ads/5.jpg"class="img-responsive" alt="Responsive image"   >
         
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/6.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/7.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/8.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/9.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/10.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/11.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-
-          <div class="item  ">
-        
-        <img src="ads/12.jpg"class="img-responsive" alt="Responsive image"   >
-        
-          </div>
-    
-
 
 
     
