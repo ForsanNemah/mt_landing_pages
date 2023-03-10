@@ -6,7 +6,7 @@ session_start();
 
 
  //$_SESSION["project_path"]=" http://localhost:8081/mt_landing_pages/ymp";
- $_SESSION["project_path"]=" http://mtlp.masagoo.com/ymp";
+ $_SESSION["project_path"]="http://mtlp.masagoo.com/ymp";
 
 if($_SESSION["loged_in"]=="1"){
 
