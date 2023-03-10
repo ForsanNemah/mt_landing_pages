@@ -34,6 +34,8 @@
 
 <div class="form-group"    >
 <div   >
+
+<!--
           <select name="type" id="servicerb" class="custom-select" aria-label="عرض زراعة الأسنان" required="true" >
 
              
@@ -54,6 +56,60 @@ echo "<option value='$value'>$value</option>";
 }
 ?>
         </select>
+
+
+-->
+
+<select>
+
+<?php
+			//include our connection
+			include 'dbconfig.php';
+ 
+			//query from the table that we create
+			$sql = "SELECT rowid, * FROM images_table  ";
+			$query = $db->query($sql);
+ 
+			while($row = $query->fetchArray()){
+
+            $image_des= $row["image_des"];  
+echo "<option value='$image_des'>$image_des</option>";
+			 
+			}
+		?>
+
+
+</select>
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 </div>
 

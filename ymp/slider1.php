@@ -1,123 +1,195 @@
-<h2>الكورسات   </h2>
+ 
+
+
+  
+<?php
+			//include our connection
+			include 'dbconfig.php';
+ 
+			//query from the table that we create
+			$sql = "SELECT rowid, * FROM departments";
+			$query = $db->query($sql);
+ 
+			while($row = $query->fetchArray()){
+				//echo $row['rowid']."<br>";
+			
+
+
+
+
+
+
+
+
+$department_name= $row['department_name'];
+$department_id= $row['rowid'];
+
+
+echo "
+
+<br>
+<br>
+
+<h2> $department_name </h2>
 <br>
  
 
-<div id="myCarousel1" class="carousel slide" data-ride="carousel"  >
+<div id='$department_id' class='carousel slide' data-ride='carousel'  >
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel1" data-slide-to="1"></li>
-      <li data-target="#myCarousel1" data-slide-to="2"></li>
+    <ol class='carousel-indicators'>
+      <li data-target='#$department_id' data-slide-to='0' class='active'></li>
+      <li data-target='#$department_id' data-slide-to='1'></li>
+      <li data-target='#$department_id' data-slide-to='2'></li>
     </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" >
+ 
+    <div class='carousel-inner' >
 
 	
       
+    
+
 
       
-          
+
+
+";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 
+
+				$sql_in = "SELECT rowid, * FROM images_table where department_id=".$row['rowid']."";
+				//echo 	$sql_in."<br>"; 
+				$query_in = $db->query($sql_in);
+				//echo $query_in->fetchArray()."wwe_before";
         
-        
+        $counter=0;
+				while($row_in = $query_in->fetchArray()){
 
+					//echo $row_in['image_path']."<br>"."wwe";
 
-    
-      <?php
-
-
-if ($handle = opendir('sidebar1')) {
-  $counter=0;
-
-    while (false !== ($entry = readdir($handle))) {
-
-        if ($entry != "." && $entry != "..") {
-
-if( $counter==0){
+          $entry=$row_in['image_path'];
+          if( $counter==0){
 
  
-  echo "<div class='item  active '>
-  
-  <img src='sidebar1/$entry' class='img-responsive' alt='Responsive image'   >
-
-  </div>
-  ";
-  echo " ";
-  echo "";
-
-
-}
-else{
-
-  
-   
-  echo "<div class='item '>
-  
-  <img src='sidebar1/$entry' class='img-responsive' alt='Responsive image'   >
-
-  </div>
-  ";
-  echo " ";
-  echo "";
-  
-
-}
-$counter++;
-           
-        }
-    }
-
-    closedir($handle);
-}
-
-
-
-
-?>
-
+            echo "<div class='item  active '>
+            
+            <img src='admin/images/files/$entry' class='img-responsive' alt='Responsive image'   >
           
+            </div>
+            ";
+            echo " ";
+            echo "";
+          
+          
+          }
+          else{
+          
+            
+             
+            echo "<div class='item '>
+            
+            <img src='admin/images/files/$entry' class='img-responsive' alt='Responsive image'   >
+          
+            </div>
+            ";
+            echo " ";
+            echo "";
+            
+          
+          }
+          $counter++;
 
-         
-
- 
 
 
 
+				}
+        //end of inner loop
+
+
+
+
+        echo "
         
-
-
-
-
-
+        
+        
+        
+        
+        
+        
  
-           
-
-          
-
-
-
-           
-
-
-
-
-         
-
-
-           
-    
-       
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
+    <a class='left carousel-control' href='#$department_id' data-slide='prev'>
+      <span class='glyphicon glyphicon-chevron-left'></span>
+      <span class='sr-only'>Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+    <a class='right carousel-control' href='#$department_id' data-slide='next'>
+      <span class='glyphicon glyphicon-chevron-right'></span>
+      <span class='sr-only'>Next</span>
     </a>
 
   </div>
   
   </div>
+ 
+        
+        
+        
+        <br>
+        <br>
+        
+        
+        
+        
+        
+        
+        ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+				 
+					 
+					 
+			}
+      //end of outer loop 
+
+
+
+
+
+      
+		?>
