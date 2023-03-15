@@ -6,6 +6,8 @@
 session_start();
 $_SESSION["loged_in"] = "0";
 
+
+
 ?>
 <html lang="en">
 <head>
@@ -27,7 +29,7 @@ $_SESSION["loged_in"] = "0";
   <header>
     <style>
       #intro {
-        background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+        background-image: url(bg.img);
         height: 100vh;
       }
 
@@ -57,20 +59,20 @@ $_SESSION["loged_in"] = "0";
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                   <input type="text" id="form1Example1" class="form-control" name="user" />
-                  <label class="form-label" for="form1Example1">User Name</label>
+                  <label class="form-label" for="form1Example1">   اسم المستخدم </label>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                   <input type="password" id="form1Example2" class="form-control" name="pass" />
-                  <label class="form-label" for="form1Example2">Password</label>
+                  <label class="form-label" for="form1Example2">كلمة المرور </label>
                 </div>
 
                 <!-- 2 column grid layout for inline styling -->
              
 
                 <!-- Submit button -->
-                <button type="submit"  name="save" class="btn btn-primary btn-block">login</button>
+                <button type="submit"  name="save" class="btn btn-primary btn-block">تسجيل دخول</button>
               </form>
             </div>
           </div>
@@ -95,16 +97,16 @@ $_SESSION["loged_in"] = "0";
     <?php
 	if(isset($_POST['save'])){
 		//include our connection
-	 echo "posted";
+	// echo "posted";
 
 
 
-echo $_POST['user'];
+//echo $_POST['user'];
 
    if($_POST['user']=="afaf" and    $_POST['pass']=="123" ){
 
     $_SESSION["loged_in"] = "1";
-    header('location: ../index.php');
+    header('location: sections/index.php');
 
 
    }
