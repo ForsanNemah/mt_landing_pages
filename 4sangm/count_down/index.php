@@ -169,7 +169,7 @@
   <style>
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 80px;
 }
 
 
