@@ -79,7 +79,7 @@
 
     </head>
 
-    <body  dir="rtl">
+    <body   >
 		
 		<!-- Top menu -->
 		 
