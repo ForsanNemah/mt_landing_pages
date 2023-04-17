@@ -110,7 +110,7 @@
     .countdown .min .word,
     .countdown .sec .word {
       display: block;
-      font-size: 2vw;
+      font-size: 3vw;
       color: #8a99ab;
     }
   </style>

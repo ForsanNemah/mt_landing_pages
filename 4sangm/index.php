@@ -100,7 +100,7 @@
 
 
 
-		<div class="row">
+		<div class="row  ">
 					<div  >
 
 
@@ -660,3 +660,13 @@ alert("Execute Javascript Code");
 */
 
 ?>
+
+<style>
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+</style>
