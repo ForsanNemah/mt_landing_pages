@@ -165,3 +165,16 @@
   //alert("wwe");
 
   </script>
+
+  <style>
+
+::-webkit-scrollbar {
+    width: 100px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #040404;
+}
+
+  </style>
